@@ -4,25 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tailwind.css" />
     <title>Coffe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="w-full max-w-[1440px] my-0 mx-auto">
-    <header class="flex justify-between p-6 text-xl font-normal  mt">
+    <header class="flex justify-between p-6 text-xl font-normal mt">
       <div>
         <img class="w-10 h-10" src="Images/Logo.svg" alt="coffe_logo" />
-    </div>
-      <div>
-          <ul class="flex gap-[56px]">
-            <li>Products</li>
-            <li>About us</li>
-            <li>Testimonial</li>
-            <li>Contact</li>
       </div>
-        <div class="flex ">
-          <img class="w-6 h-6" src="Images/Icon Search.svg" alt="search_logo" />
-          <img class="w-6 h-6" src="Images/ShoppingBagOpen.svg" alt="ShoppingBagOpen" />
-        </div>
-      </ul>
+      <div>
+        <ul class="flex gap-[56px]">
+          <li>Products</li>
+          <li>About us</li>
+          <li>Testimonial</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="flex">
+        <img class="w-6 h-6" src="Images/Icon Search.svg" alt="search_logo" />
+        <img
+          class="w-6 h-6"
+          src="Images/ShoppingBagOpen.svg"
+          alt="ShoppingBagOpen"
+        />
+      </div>
     </header>
+
+    <section class="mt-20 justify-center">
+      <div class="flex justify-center">
+        <div class="w-[631px] h-[348px]">
+          <div>
+            <h1 class="text-6xl leading-[120%] text-center mb-4 text-[#282A3A]">Enjoy Your Favorite Coffee with Ngopi</h1>
+            <p class="text-center text-xl">
+              Discover tranquility at Ngopi a sanctuary for unwinding, where
+              your evenings are perfected with relaxation and rich flavors.
+            </p>
+            <div class="flex justify-center">
+              <button 
+                class="mt-4 items-center flex justify-center uppercase text-white w-[363px] h-[82px] rounded-tr-[32px] rounded-bl-[32px]  bg-[#6d1600] text-2xl"
+              >
+                Explore product
+                <img class="w-[34px] h-[34px]" src="Images/ArrowDownRight.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
