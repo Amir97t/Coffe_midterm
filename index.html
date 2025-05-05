@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="tailwind.css" />
+    <style type="text/tailwindcss">
+      /* @theme {
+        --color-clifford: #da373d;
+      } */
+    </style>
     <title>Coffe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,13 +17,15 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-500 w-full max-w-[1440px] my-0 mx-auto">
-    <header class="flex justify-between p-6 text-xl font-normal mt">
+  <body class="w-full max-w-[1440px] my-0 mx-auto">
+    <header
+      class="flex justify-between p-6 text-xl font-normal mt text-[#282A3A]"
+    >
       <div>
         <img class="w-10 h-10" src="Images/Logo.svg" alt="coffe_logo" />
       </div>
       <div>
-        <ul class="flex gap-[56px]">
+        <ul class="flex gap-[56px] font-[inter] text-xl">
           <li>Products</li>
           <li>About us</li>
           <li>Testimonial</li>
@@ -35,7 +41,6 @@
         />
       </div>
     </header>
-
     <section class="mt-20">
       <div class="flex justify-center">
         <div class="w-[631px] h-[348px]">
@@ -63,7 +68,6 @@
           </div>
         </div>
       </div>
-
       <div class="flex justify-center gap-12 mt-6">
         <img
           class="w-[243.5px] h-[348px] rounded-tr-[80px] rounded-bl-[80px]"
@@ -86,7 +90,6 @@
           src="Images/Coffe/coffe5.jpg"
         />
       </div>
-
       <div class="my-20 flex justify-center">
         <hr class="w-10/12" />
       </div>
@@ -109,11 +112,9 @@
         </div>
       </div>
     </section>
-
     <div class="flex my-20 justify-center">
       <hr class="w-10/12" />
     </div>
-
     <main>
       <div>
         <div class="flex justify-center">
@@ -122,7 +123,9 @@
             <h2 class="font-[Playfair_Display] text-4xl">
               From Top Quality Materials
             </h2>
-            <ul class="font-[inter] flex justify-between text-2xl mt-30">
+            <ul
+              class="font-[inter] text-[#282A3A] mb-10 flex justify-between text-2xl mt-30"
+            >
               <li>Latte</li>
               <li>robusta</li>
               <li>arabica</li>
@@ -249,7 +252,6 @@
         </div>
       </div>
     </main>
-
     <section class="mt-20">
       <div>
         <div class="flex justify-center">
@@ -303,11 +305,9 @@
         </div>
       </div>
     </section>
-
     <div class="flex justify-center mt-10">
       <hr class="w-9/12" />
     </div>
-
     <section class="mt-10 text-[#282A3A] font-[inter]">
       <div class="flex justify-center mb-10">
         <div class="flex-col">
@@ -386,12 +386,10 @@
         </div>
       </div>
     </section>
-
     <div class="flex justify-center mt-10">
       <hr class="w-9/12" />
     </div>
-
-    <section class="mt-10 text-[#282A3A] font-[inter]">
+    <section class="my-10 text-[#282A3A] font-[inter]">
       <div class="flex justify-center mb-10">
         <div class="flex-col">
           <p class="text-center text-2xl">Blog</p>
@@ -465,5 +463,74 @@
         </div>
       </div>
     </section>
+
+    <div class="mt-100">
+      <div class="flex justify-center">
+        <button
+          class="mt-4 items-center flex justify-center uppercase text-white w-[280px] h-[82px] rounded-tr-[32px] rounded-bl-[32px] bg-[#6d1600] text-2xl"
+        >
+          read more
+          <img class="w-[34px] h-[34px]" src="Images/ArrowDownRight.svg" />
+        </button>
+      </div>
+      <div class="bg-[#282A3A] text-white mt-20 flex h-[528px] text-xl">
+        <div class="flex ml-15">
+          <div class="mt-15 flex-col w-1/3 ">
+            <img
+              class="w-[220px] h-[58px] my-8"
+              src="Images/Frame 28(1).png"
+              alt="web-logo"
+            />
+            <p class="mb-5 text-justify w-2/3">
+              Discover tranquility at Ngopi a sanctuary for unwinding, where
+              your evenings are perfected with relaxation and rich flavors.
+            </p>
+            <div class="mt-5">
+              <p>hello@ngopi.com</p>
+              <p>Phone : +01 23456789</p>
+            </div>
+          </div>
+          <div class="font-[inter] text-base w-2/3">
+            <div class="flex justify-between mt-7 mx-8">
+              <div class="mt-15 justify-between">
+                <div class="flex-col font-[inter] text-base">
+                  <p class="font-[Playfair_Display] mb-4 text-[28px]">
+                    Quick Links
+                  </p>
+                  <p class="my-2">Services</p>
+                  <p class="my-2">Portfolio</p>
+                  <p class="my-2">About us</p>
+                  <p class="my-2">Testimonial</p>
+                </div>
+                <div class="flex-col"></div>
+                <div class="flex-col"></div>
+              </div>
+              <div class="mt-15 justify-between">
+                <p class="font-[Playfair_Display] mb-4 text-[28px]">
+                  Resources
+                </p>
+                <p class="my-2">Support</p>
+                <p class="my-2">Privecy Policy</p>
+                <p class="my-2">Term & Conditions</p>
+              </div>
+              <div class="mt-15 mr-5 justify-between">
+                <p class="font-[Playfair_Display] mb-4 text-[28px]">
+                  Social Media
+                </p>
+                <img
+                  class="w-[272px] h-[48px]"
+                  src="Images/social.png"
+                  alt="social_icons"
+                />
+              </div>
+            </div>
+            <div class="flex-col mt-10 ml-8">
+              <p class="font-[Playfair_Display] text-3xl mb-5">Subscribe</p>
+              <img src="Images/Frame 22.png" alt="Email_sub" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
