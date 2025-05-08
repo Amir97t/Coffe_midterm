@@ -9,18 +9,18 @@
         --color-primary: #6d1600;
         --color-secondary: #282a3a;
         --color-border: #d9d9d9;
-
+        /* 
         --font-family-inter: "Inter", sans-serif;
-        --font-family-playfair: "Playfair Display", serif;
+        --font-family-playfair: "Playfair Display", serif; */
       }
-      @layer utilities {
+      /* @layer utilities {
         .font-inter {
           font-family: var(--font-family-inter);
         }
         .font-playfair {
           font-family: var(--font-family-playfair);
         }
-      }
+      } */
     </style>
 
     <title>Coffe</title>
@@ -32,14 +32,12 @@
     />
   </head>
   <body class="w-full max-w-[1440px] my-0 mx-auto text-secondary">
-    <header
-      class="flex justify-between p-6 text-xl font-(family-name:platfair)"
-    >
+    <header class="flex justify-between p-6 text-xl">
       <div>
         <img class="w-10 h-10" src="Images/Logo.svg" alt="coffe_logo" />
       </div>
       <div>
-        <ul class="flex gap-[56px] font-[inter] text-xl">
+        <ul class="flex gap-[56px] text-xl font-[inter]">
           <li>Products</li>
           <li>About us</li>
           <li>Testimonial</li>
